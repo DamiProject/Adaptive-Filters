@@ -23,11 +23,11 @@ Figure 2: System identification block diagram using DFT-LMS.
 
 1. **Step-size Impact on Tradeoffs:** The DFT-LMS adaptive filter was used to estimate the impulse response of a time-varying unknown system modeled as a first-order Markov process. Three different step sizes were evaluated to demonstrate how the step size affects convergence speed, tracking ability, and steady-state error, as shown in the table and figures below.
 
-<img width="1037" height="611" alt="image" src="https://github.com/user-attachments/assets/fad5c564-ed29-4e3b-9fb8-427c68f519f1" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/fad5c564-ed29-4e3b-9fb8-427c68f519f1" />
 
-Figure 3: 
+Figure 3: Time-varying estimate & tracking of the uknown system
 
-<img width="715" height="393" alt="image" src="https://github.com/user-attachments/assets/66245002-c287-4258-8418-f85800c81986" />
+<img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/66245002-c287-4258-8418-f85800c81986" />
 
 
 
