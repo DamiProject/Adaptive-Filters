@@ -85,6 +85,40 @@ Although these tradeoff considerations were demonstrated using a time-invariant 
 Table 2: Tradeoff Considerations
 
 
+## Repository Structure
+```
+Adaptive-Filters/
+|-- Time-invariant System/       # Time-invariant system identification 
+|-- Time-varying System/         # Time-varrying system identification
+```
+---
+
+## Requirements
+MATLAB
+
+- ---
+
+## How to Run
+
+Clone the repository:
+
+```bash
+git clone https://github.com/DamiProject/Adaptive-Filters.git
+```
+
+Open MATLAB and navigate to the project root directory.
+
+
+Individual modules can be explored and run from the `Time-invariant System/` and `Time-varying System/`  folder.
+
+---
+
+## Author
+
+**Damilola Awotunde**
+
+MEng, Communications & Signal Processing - Western University | [LinkedIn](https://www.linkedin.com/in/damilola-awotunde) 
+
 
 
 
