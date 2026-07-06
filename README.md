@@ -5,7 +5,7 @@
 **Adaptive Filtering for Stochastic System Identification:** This project implements and compares adaptive filtering algorithms for identifying unknown systems under white-noise and coloured-noise input conditions. The simulations evaluate convergence behavior, tracking behavior, ensemble-averaged mean-squared error, and adaptive weight trajectories for both time-invariant and time-varying systems. It also shows the importance of selecting appropriate step-size and forgetting-factor parameters for LMS-based and RLS-based adaptive algorithms. These parameters affect convergence speed, tracking ability, steady-state error, and computational complexity tradeoffs.
 
 ## Project Status
-This repository is under active development. The core adaptive filter algorithms are implemented, while future improvements may include code refactoring, unit testing, additional stochastic test scenarios, fixed-point implementation, and hardware-oriented optimization.
+This repository presents a proof of concept MATLAB implementation of adaptive filtering algorithms for stochastic system identification. Current simulations demonstrate convergence, tracking, MSE behavior, and algorithm tradeoffs. Future work includes additional unit tests and stochastic parameter tests, fixed-point implementation, and hardware-oriented optimization.
 
 ## Proof of Concept 
 
@@ -77,14 +77,12 @@ Figure 12: Ensembled average error of the time-invariant estimate of the unknown
 Figure 13: Ensembled average error of the time-invariant estimate of the unknown system impulse response excited by white noise.
 
 **Conclusion**
-For an input signal that is highly correlated like a human speech when used to excite a time-invariant to achieve a desired ouputs, careful considerations must be made in selecting an adaptive filter that models this system because as we can see in Figure 12 and Figure 13, choosing NLMS or variable-RLS successfully identifies the systems coefficients but they differ in convergence speed, steady state MSE, and computational cost. Where variable-RLS provides faster convergence and reaches its steady-state MSE in fewer samples compared to NLMS but with higher computational cost. 
-
+For highly correlated input signals such as speech, careful adaptive-filter selection is important when identifying a time-invariant unknown system. Figures 12 and 13 show that both NLMS and variable-RLS can identify the system coefficients, but they differ in convergence speed, steady-state MSE, and computational cost.Where variable-RLS provides faster convergence and reaches its steady-state MSE in fewer samples compared to NLMS but with higher computational cost. 
 Although these tradeoff considerations were demonstrated using a time-invariant system, the same principles apply to tracking time-varying systems. A variable-RLS algorithm will generally track time-varying system changes much faster than NLMS due to its superior convergence properties, though at the expense of significantly higher computational complexity.
 
 <img width="420" height="320" alt="image" src="https://github.com/user-attachments/assets/9de231c3-6af0-4860-9308-d4b84731f16d" />
 
 Table 2: Tradeoff Considerations
-
 
 
 
