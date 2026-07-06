@@ -10,73 +10,7 @@
 % Using the Mean-Square Error (MSE), the different convergence factor used had 
 % the following characteristic in the table below for both coloured and white 
 % noise input signal.
-%% 
-% 
-%% 
-% Convergence
-% 
-% Factor $\left(\mu \right)$
-%% 
-% Convergence
-% 
-% Rate
-%% 
-% Tracking 
-% 
-% Accuracy
-%% 
-% Steady-State Error
-%% 
-% 
-%% 
-% 
-% 
-% 0.01
-%% 
-% Converges slowest to 
-% 
-% the unknown system
-%% 
-% High Lag when tracking the 
-% 
-% unknown system weights.
-%% 
-% Lowest 
-%% 
-% 
-%% 
-% 
-% 
-% 0.05
-%% 
-% Converges moderately
-% 
-% to the unknown system
-%% 
-% Performs better in tracking the
-% 
-% unknown system weights.
-%% 
-% Higher
-%% 
-% 
-%% 
-% 
-% 
-% 1 
-%% 
-% Did not converge to the 
-% 
-% unknown system.
-%% 
-% Did not  track the unknown 
-% 
-% system.
-%% 
-% Worst
-%% 
-% 
-% 
+
 % *Conclusion:* 
 % 
 % Based on the MSE results, a convergence factor of 0.05 provided the best balance 
@@ -88,14 +22,10 @@
 % is because white noise has lower input correlation, allowing faster and more 
 % reliable adaptation, while coloured noise increases correlation and can slow 
 % convergence and reduce tracking accuracy.
-% 
-% 
 
 %% This script evaluates the performance of the DFT-LMS algorithm 
 %% under various convergence factors for white and colored noise inputs.
 %% DFT-LMS is a class of Transform Domain LMS (TD-LMS) adaptive filtering.
-
-
 
 clear; clc;
  
@@ -126,7 +56,7 @@ Rb   = sigma_b2 * eye(M); % diag(sigma_b2*ones(1,M))
 traceRu = trace(Ru);      % = M
 traceRb = trace(Rb);      % = sigma_b2*M
  
-% Preallocate ensemble-averaged error accumulators.
+% Preallocate ensemble-average error.
 e_ensemble_lms       = zeros(length(mu), N);
 e_ensemble_lms_color = zeros(length(mu), N);
  
