@@ -81,6 +81,10 @@ For an input signal that is highly correlated like a human speech when used to e
 
 Although these tradeoff considerations were demonstrated using a time-invariant system, the same principles apply to tracking time-varying systems. A variable-RLS algorithm will generally track time-varying system changes much faster than NLMS due to its superior convergence properties, though at the expense of significantly higher computational complexity.
 
+<img width="420" height="320" alt="image" src="https://github.com/user-attachments/assets/9de231c3-6af0-4860-9308-d4b84731f16d" />
+
+Table 2: Tradeoff Considerations
+
 
 
 
