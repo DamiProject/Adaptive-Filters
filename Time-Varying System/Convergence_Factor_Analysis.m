@@ -5,12 +5,6 @@
 % (TDL) convergence factors in tracking an unknown, time-varying system when the 
 % input signal is white or colored noise.
 % 
-% *Performance Analysis Summary*
-% 
-% Using the Mean-Square Error (MSE), the different convergence factor used had 
-% the following characteristic in the table below for both coloured and white 
-% noise input signal.
-
 % *Conclusion:* 
 % 
 % Based on the MSE results, a convergence factor of 0.05 provided the best balance 
