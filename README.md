@@ -21,7 +21,7 @@ Figure 2: System identification block diagram using DFT-LMS.
 
 **Simulation:** 
 
-1. **Step-size Impact on Tradeoffs:** The DFT-LMS adaptive filter was used to estimate the impulse response of a time-varying unknown system modeled as a first-order Markov process. Three different step sizes were evaluated to demonstrate how the step size affects convergence speed, tracking ability, and steady-state error, as shown in the table and figures below.
+1. **Step-size Impact on Tradeoffs:** A 5-tap DFT-LMS adaptive filter was used to estimate the impulse response of a time-varying unknown system modeled as a first-order Markov process. Three different step sizes were evaluated to demonstrate how the step size affects convergence speed, tracking ability, and steady-state error, as shown in the table and figures below.
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/fad5c564-ed29-4e3b-9fb8-427c68f519f1" />
 
@@ -66,7 +66,7 @@ Table 1:  Effect of step size on convergence speed, tracking ability, and steady
 **Conclusion** 
 Based on the MSE results, a step size of 0.05 provided the best balance between convergence speed, tracking accuracy, and steady-state error. A convergence factor of 0.01 produced slower convergence and higher tracking lag, while a step size of 1 was too large and caused divergence. Also, with the exception of the divergent case where μ = 1, the TD-LMS adaptive filter performed better in white-noise environments than in coloured-noise environments. This is because white noise has lower input correlation, allowing faster and more reliable adaptation, while coloured noise increases correlation and can slow convergence and reduce tracking accuracy.
 
-2. **Input Signal Impact Tradeoffs:** White-noise and coloured-noise inputs were used with the variable-RLS and NLMS adaptive filters to demonstrate the impact of input-signal correlation on convergence speed and steady-state error during the identification of the impulse response of a time-invariant unknown system.
+2. **Input Signal Impact Tradeoffs:** White-noise and coloured-noise inputs were used with the 5-tap variable-RLS and 5-tap NLMS adaptive filters to demonstrate the impact of input-signal correlation on convergence speed and steady-state error during the identification of the impulse response of a time-invariant unknown system.
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/97b9e389-b421-4a2c-8d97-0eac846611a4" />
 
