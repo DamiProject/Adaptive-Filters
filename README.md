@@ -77,7 +77,7 @@ Figure 12: Ensembled average error of the time-invariant estimate of the unknown
 Figure 13: Ensembled average error of the time-invariant estimate of the unknown system impulse response excited by white noise.
 
 **Conclusion**
-For highly correlated input signals such as speech, careful adaptive-filter selection is important when identifying a time-invariant unknown system. Figures 12 and 13 show that both NLMS and variable-RLS can identify the system coefficients, but they differ in convergence speed, steady-state MSE, and computational cost.Where variable-RLS provides faster convergence and reaches its steady-state MSE in fewer samples compared to NLMS but with higher computational cost. 
+For highly correlated input signals such as speech, careful adaptive-filter selection is important when identifying a time-invariant unknown system. Figures 12 and 13 show that both NLMS and variable-RLS can identify the system coefficients, but they differ in convergence speed, steady-state MSE, and computational cost. Where variable-RLS provides faster convergence and reaches its steady-state MSE in fewer samples compared to NLMS but with higher computational cost. 
 Although these tradeoff considerations were demonstrated using a time-invariant system, the same principles apply to tracking time-varying systems. A variable-RLS algorithm will generally track time-varying system changes much faster than NLMS due to its superior convergence properties, though at the expense of significantly higher computational complexity.
 
 <img width="420" height="320" alt="image" src="https://github.com/user-attachments/assets/9de231c3-6af0-4860-9308-d4b84731f16d" />
@@ -88,7 +88,7 @@ Table 2: Tradeoff Considerations
 ```
 Adaptive-Filters/
 |-- Time-invariant System/       # Time-invariant system identification 
-|-- Time-varying System/         # Time-varrying system identification
+|-- Time-varying System/         # Time-Varying system identification
 ```
 ---
 
