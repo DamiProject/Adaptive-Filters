@@ -64,7 +64,7 @@ Figure 11: mu = 1, ensembled average error of the time-varying estimate & tracki
 Table 1:  Effect of step size on convergence speed, tracking ability, and steady-state error. 
 
 **Conclusion** 
-Based on the MSE results, a step size of 0.05 provided the best balance between convergence speed, tracking accuracy, and steady-state error. A convergence factor of 0.01 produced slower convergence and higher tracking lag, while a step size of 1 was too large and caused divergence. Also, with the exception of the divergent case where μ = 1, the TD-LMS adaptive filter performed better in white-noise environments than in coloured-noise environments. This is because white noise has lower input correlation, allowing faster and more reliable adaptation, while coloured noise increases correlation and can slow convergence and reduce tracking accuracy.
+Based on the MSE results, a step size of 0.05 provided the best balance between convergence speed, tracking accuracy, and steady-state error. A convergence factor of 0.01 produced slower convergence and higher tracking lag, while a step size of 1 was too large and caused divergence. Also, with the exception of the divergent case where μ = 1, the Transform Domain-LMS adaptive filter performed better in white-noise environments than in coloured-noise environments. This is because white noise has lower input correlation, allowing faster and more reliable adaptation, while coloured noise increases correlation and can slow convergence and reduce tracking accuracy.
 
 2. **Input Signal Impact Tradeoffs:** White-noise and coloured-noise inputs were used with the 5-tap variable-RLS and 5-tap NLMS adaptive filters to demonstrate the impact of input-signal correlation on convergence speed and steady-state error during the identification of the impulse response of a time-invariant unknown system.
 
@@ -83,7 +83,6 @@ Although these tradeoff considerations were demonstrated using a time-invariant 
 <img width="420" height="320" alt="image" src="https://github.com/user-attachments/assets/9de231c3-6af0-4860-9308-d4b84731f16d" />
 
 Table 2: Tradeoff Considerations
-
 
 ## Repository Structure
 ```
@@ -107,7 +106,6 @@ git clone https://github.com/DamiProject/Adaptive-Filters.git
 ```
 
 Open MATLAB and navigate to the project root directory.
-
 
 Individual modules can be explored and run from the `Time-invariant System/` and `Time-varying System/`  folder.
 
